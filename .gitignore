@@ -18,3 +18,5 @@ fp-info-cache
 *.dsn
 *.ses
 
+\hdw\USB_Hub\USB_Hub-backups
+*.zip

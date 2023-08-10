@@ -54,7 +54,7 @@
     (property "Sheetname" "+5V Power Supply" (at 53.34 51.3584 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "POS5_Power_Suply.kicad_sch" (at 53.34 56.4646 0)
+    (property "Sheetfile" "POS5_Power_Supply.kicad_sch" (at 53.34 56.4646 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
