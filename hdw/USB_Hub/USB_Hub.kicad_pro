@@ -399,6 +399,10 @@
       "Port Power Control"
     ],
     [
+      "5b35e0c1-9928-450a-ba6b-f2a701eceaac",
+      "Power ORing"
+    ],
+    [
       "00000000-0000-0000-0000-00005f41b463",
       "Upstream Port"
     ]

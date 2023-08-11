@@ -336,6 +336,23 @@
     )
   )
 
+  (sheet (at 189.23 87.63) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 5b35e0c1-9928-450a-ba6b-f2a701eceaac)
+    (property "Sheetname" "Power ORing" (at 189.23 86.9184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power_oring.kicad_sch" (at 189.23 92.0246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf" (page "21"))
+      )
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
   )
