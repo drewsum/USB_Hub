@@ -3245,7 +3245,7 @@
     (property "Reference" "U602" (at 132.715 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "TPS62135" (at 132.715 74.93 0)
+    (property "Value" "TPS62132" (at 132.715 74.93 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" (at 132.715 74.93 0)
