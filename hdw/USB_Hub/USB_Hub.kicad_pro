@@ -312,7 +312,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -403,8 +403,20 @@
       "Power ORing"
     ],
     [
+      "203423c4-94fc-4748-bda0-ab8f2e301358",
+      "+3.3V Power Supply"
+    ],
+    [
       "00000000-0000-0000-0000-00005f41b463",
       "Upstream Port"
+    ],
+    [
+      "b536b902-d925-4d87-a550-76997db32615",
+      "+3.3V Telemetry"
+    ],
+    [
+      "dbf8b5e7-1395-4db6-b7a5-94e88d4ceeae",
+      "Port Telemetry"
     ]
   ],
   "text_variables": {}

@@ -4,6 +4,13 @@
 
   (paper "A")
 
+  (title_block
+    (title "USB Hub")
+    (date "2023-08-18")
+    (rev "PRELIM")
+    (company "Drew Maatman")
+  )
+
   (lib_symbols
   )
 
@@ -81,14 +88,14 @@
     )
   )
 
-  (sheet (at 53.34 69.85) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 53.34 95.25) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-00005f41a7e6)
-    (property "Sheetname" "PIC18F Programming" (at 53.34 69.1384 0)
+    (property "Sheetname" "PIC18F Programming" (at 53.34 94.5384 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "PIC18F_Programming.kicad_sch" (at 53.34 74.2446 0)
+    (property "Sheetfile" "PIC18F_Programming.kicad_sch" (at 53.34 99.6446 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
@@ -98,14 +105,14 @@
     )
   )
 
-  (sheet (at 53.34 78.74) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 53.34 104.14) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-00005f41a817)
-    (property "Sheetname" "PIC18F Core" (at 53.34 78.0284 0)
+    (property "Sheetname" "PIC18F Core" (at 53.34 103.4284 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "PIC18F_Core.kicad_sch" (at 53.34 83.1346 0)
+    (property "Sheetfile" "PIC18F_Core.kicad_sch" (at 53.34 108.5346 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
@@ -115,14 +122,14 @@
     )
   )
 
-  (sheet (at 53.34 87.63) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 53.34 113.03) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-00005f41a830)
-    (property "Sheetname" "USB UART Bridge" (at 53.34 86.9184 0)
+    (property "Sheetname" "USB UART Bridge" (at 53.34 112.3184 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "USB_UART_Bridge.kicad_sch" (at 53.34 92.0246 0)
+    (property "Sheetfile" "USB_UART_Bridge.kicad_sch" (at 53.34 117.4246 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
@@ -234,14 +241,14 @@
     )
   )
 
-  (sheet (at 53.34 96.52) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 53.34 121.92) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-00005f422473)
-    (property "Sheetname" "PGOOD LEDs" (at 53.34 95.8084 0)
+    (property "Sheetname" "PGOOD LEDs" (at 53.34 121.2084 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "PGOOD_LEDs.kicad_sch" (at 53.34 100.9146 0)
+    (property "Sheetfile" "PGOOD_LEDs.kicad_sch" (at 53.34 126.3146 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
@@ -251,14 +258,14 @@
     )
   )
 
-  (sheet (at 53.34 105.41) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 53.34 130.81) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-00005f422479)
-    (property "Sheetname" "Status LEDs" (at 53.34 104.6984 0)
+    (property "Sheetname" "Status LEDs" (at 53.34 130.0984 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "Status_LEDs.kicad_sch" (at 53.34 109.8046 0)
+    (property "Sheetfile" "Status_LEDs.kicad_sch" (at 53.34 135.2046 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
@@ -268,14 +275,14 @@
     )
   )
 
-  (sheet (at 53.34 114.3) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 53.34 139.7) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-00005f42247f)
-    (property "Sheetname" "Hub LEDs" (at 53.34 113.5884 0)
+    (property "Sheetname" "Hub LEDs" (at 53.34 138.9884 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "Hub_LEDs.kicad_sch" (at 53.34 118.6946 0)
+    (property "Sheetfile" "Hub_LEDs.kicad_sch" (at 53.34 144.0946 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
@@ -285,14 +292,14 @@
     )
   )
 
-  (sheet (at 53.34 123.19) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 53.34 148.59) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-00005f423270)
-    (property "Sheetname" "Display" (at 53.34 122.4784 0)
+    (property "Sheetname" "Display" (at 53.34 147.8784 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "Display.kicad_sch" (at 53.34 127.5846 0)
+    (property "Sheetfile" "Display.kicad_sch" (at 53.34 152.9846 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
@@ -302,19 +309,36 @@
     )
   )
 
-  (sheet (at 53.34 132.08) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 53.34 157.48) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-00005f423276)
-    (property "Sheetname" "Pushbuttons" (at 53.34 131.3684 0)
+    (property "Sheetname" "Pushbuttons" (at 53.34 156.7684 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "Pushbuttons.kicad_sch" (at 53.34 136.4746 0)
+    (property "Sheetfile" "Pushbuttons.kicad_sch" (at 53.34 161.8746 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf" (page "13"))
+      )
+    )
+  )
+
+  (sheet (at 53.34 69.85) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 203423c4-94fc-4748-bda0-ab8f2e301358)
+    (property "Sheetname" "+3.3V Power Supply" (at 53.34 69.1384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "POS3P3_Power_Supply.kicad_sch" (at 53.34 74.2446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf" (page "22"))
       )
     )
   )
@@ -349,6 +373,40 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf" (page "21"))
+      )
+    )
+  )
+
+  (sheet (at 53.34 78.74) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid b536b902-d925-4d87-a550-76997db32615)
+    (property "Sheetname" "+3.3V Telemetry" (at 53.34 78.0284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "POS3P3_Telemetry.kicad_sch" (at 53.34 83.1346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf" (page "23"))
+      )
+    )
+  )
+
+  (sheet (at 189.23 43.18) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid dbf8b5e7-1395-4db6-b7a5-94e88d4ceeae)
+    (property "Sheetname" "Port Telemetry" (at 189.23 42.4684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Port_Telemetry.kicad_sch" (at 189.23 47.5746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf" (page "24"))
       )
     )
   )

@@ -4,6 +4,13 @@
 
   (paper "A")
 
+  (title_block
+    (title "USB Hub")
+    (date "2023-08-18")
+    (rev "PRELIM")
+    (company "Drew Maatman")
+  )
+
   (lib_symbols
     (symbol "Connector_Generic:Conn_01x08" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 10.16 0)
@@ -777,11 +784,6 @@
   (wire (pts (xy 109.22 68.58) (xy 109.22 54.61))
     (stroke (width 0) (type default))
     (uuid fa2f3a9a-302c-4ca1-a013-4ce6ea03d5c2)
-  )
-
-  (text "+5V?" (at 100.33 29.21 0)
-    (effects (font (face "Courier New") (size 5.08 5.08) (thickness 1.016) bold (color 255 0 0 1)) (justify left bottom))
-    (uuid 8273fd4f-f670-46c7-a542-2e01a4eb065c)
   )
 
   (global_label "~{PIC18F_MCLR}" (shape passive) (at 147.32 44.45 0) (fields_autoplaced)

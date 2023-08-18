@@ -4,6 +4,13 @@
 
   (paper "A")
 
+  (title_block
+    (title "USB Hub")
+    (date "2023-08-18")
+    (rev "PRELIM")
+    (company "Drew Maatman")
+  )
+
   (lib_symbols
   )
 
