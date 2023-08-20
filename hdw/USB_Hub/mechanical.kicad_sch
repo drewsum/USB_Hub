@@ -1,6 +1,6 @@
 (kicad_sch (version 20230121) (generator eeschema)
 
-  (uuid 9853459d-4a40-4d9a-8437-2abb20d26e5d)
+  (uuid 443bc2e8-41ff-4217-a890-ca67ebbc8f27)
 
   (paper "A")
 
@@ -316,7 +316,7 @@
     (property "Value" "3mm Mounting Hole" (at 139.7 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Mounting_Holes:MountingHole_3mm_Pad_Via" (at 139.7 66.675 0)
+    (property "Footprint" "MountingHole:MountingHole_3mm" (at 139.7 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 139.7 66.675 0)
@@ -345,7 +345,7 @@
     (property "Value" "3mm Mounting Hole" (at 114.3 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Mounting_Holes:MountingHole_3mm_Pad_Via" (at 114.3 66.675 0)
+    (property "Footprint" "MountingHole:MountingHole_3mm" (at 114.3 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 114.3 66.675 0)
@@ -438,7 +438,7 @@
     (property "Value" "3mm Mounting Hole" (at 114.3 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Mounting_Holes:MountingHole_3mm_Pad_Via" (at 114.3 46.355 0)
+    (property "Footprint" "MountingHole:MountingHole_3mm" (at 114.3 46.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 114.3 46.355 0)
@@ -595,7 +595,7 @@
     (property "Value" "3mm Mounting Hole" (at 139.7 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Mounting_Holes:MountingHole_3mm_Pad_Via" (at 139.7 46.355 0)
+    (property "Footprint" "MountingHole:MountingHole_3mm" (at 139.7 46.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 139.7 46.355 0)
