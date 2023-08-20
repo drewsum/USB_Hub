@@ -6,7 +6,7 @@
 
   (title_block
     (title "USB Hub")
-    (date "2023-08-18")
+    (date "2023-08-20")
     (rev "PRELIM")
     (company "Drew Maatman")
   )
@@ -260,92 +260,173 @@
         )
       )
     )
-    (symbol "Power_Protection:PESD3V3L5UY" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
+    (symbol "Power_Protection:SP0503BAHT" (pin_names hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 5.715 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "PESD3V3L5UY" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Value" "SP0503BAHT" (at 5.715 0.635 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 0 0 0)
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-143" (at 5.715 -1.27 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "Datasheet" "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" (at 3.175 3.175 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXL5UF_V_Y.pdf" (at 0 0 0)
+      (property "ki_keywords" "usb esd protection suppression transient" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_locked" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "ki_keywords" "diode" (at 0 0 0)
+      (property "ki_description" "TVS Diode Array, 5.5V Standoff, 3 Channels, SOT-143 package" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Low capacitance unidirectional fivefold ESD protection diode array, 3.3V, Common Anode, SOT-363" (at 0 0 0)
+      (property "ki_fp_filters" "SOT?143*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "SOT?363*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "PESD3V3L5UY_0_1"
-        (polyline
-          (pts
-            (xy -1.016 0)
-            (xy 1.016 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.016 1.016)
-            (xy -1.016 -1.016)
-            (xy -0.508 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 1.016)
-            (xy -1.016 0)
-            (xy 1.016 -1.016)
-            (xy 1.016 1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "PESD3V3L5UY_1_1"
-        (pin passive line (at -2.54 0 0) (length 2.54)
-          (name "K1" (effects (font (size 1.27 1.27))))
+      (symbol "SP0503BAHT_0_0"
+        (pin passive line (at 0 -5.08 90) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 2.54 0 180) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
+      )
+      (symbol "SP0503BAHT_0_1"
+        (rectangle (start -4.445 2.54) (end 4.445 -2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (circle (center 0 -1.27) (radius 0.254)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy -2.54 2.54)
+            (xy -2.54 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.635 1.27)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 2.54)
+            (xy 2.54 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.635 1.27)
+            (xy -0.762 1.27)
+            (xy -0.762 1.016)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.302 1.016)
+            (xy -3.302 1.27)
+            (xy -1.905 1.27)
+            (xy -1.778 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 1.27)
+            (xy -2.54 -1.27)
+            (xy 2.54 -1.27)
+            (xy 2.54 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 1.27)
+            (xy -1.905 0)
+            (xy -3.175 0)
+            (xy -2.54 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.635 0)
+            (xy -0.635 0)
+            (xy 0 1.27)
+            (xy 0.635 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.778 1.016)
+            (xy 1.778 1.27)
+            (xy 3.175 1.27)
+            (xy 3.302 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy 1.905 0)
+            (xy 3.175 0)
+            (xy 2.54 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "SP0503BAHT_1_1"
+        (pin passive line (at -2.54 5.08 270) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-      )
-      (symbol "PESD3V3L5UY_2_1"
-        (pin passive line (at -2.54 0 0) (length 2.54)
-          (name "K2" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 0 5.08 270) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-      )
-      (symbol "PESD3V3L5UY_3_1"
-        (pin passive line (at -2.54 0 0) (length 2.54)
-          (name "K3" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 2.54 5.08 270) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "PESD3V3L5UY_4_1"
-        (pin passive line (at -2.54 0 0) (length 2.54)
-          (name "K4" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "PESD3V3L5UY_5_1"
-        (pin passive line (at -2.54 0 0) (length 2.54)
-          (name "K5" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -645,35 +726,35 @@
     )
   )
 
+  (junction (at 97.155 52.07) (diameter 0) (color 0 0 0 0)
+    (uuid 51f0fa36-a560-4e2e-8e4b-c4b6689540d7)
+  )
   (junction (at 106.68 137.16) (diameter 0) (color 0 0 0 0)
     (uuid 5608fc52-fb68-4745-8f6d-77f799f18ef9)
-  )
-  (junction (at 102.87 52.07) (diameter 0) (color 0 0 0 0)
-    (uuid 5a2a4d5a-fb0e-4ba4-9f5c-283d976628a6)
-  )
-  (junction (at 90.17 44.45) (diameter 0) (color 0 0 0 0)
-    (uuid 6ae5bcdc-928b-42bc-b847-e034ad17a555)
-  )
-  (junction (at 109.22 54.61) (diameter 0) (color 0 0 0 0)
-    (uuid 828ef2ef-0563-46b4-9a5e-f62bd8e3e4ae)
   )
   (junction (at 147.955 123.825) (diameter 0) (color 0 0 0 0)
     (uuid 844b86a2-4c73-41c4-8b6a-5523b554a175)
   )
-  (junction (at 96.52 46.99) (diameter 0) (color 0 0 0 0)
-    (uuid fbf698a5-64b6-4c14-8a0f-52fc5ce376be)
+  (junction (at 99.695 54.61) (diameter 0) (color 0 0 0 0)
+    (uuid d004446a-c358-4294-9a23-c0d1a6943436)
+  )
+  (junction (at 94.615 46.99) (diameter 0) (color 0 0 0 0)
+    (uuid dab28820-6762-4000-9307-524056095857)
   )
 
   (no_connect (at 81.915 59.69) (uuid 3c32aaf2-e8b3-40c3-984f-34932600f018))
   (no_connect (at 81.915 57.15) (uuid 481d930a-9d4b-4550-9fc5-bfbd75bd11d3))
   (no_connect (at 81.915 62.23) (uuid 54522ebe-cbd2-4754-bff9-52611e13834e))
-  (no_connect (at 115.57 68.58) (uuid 73a77a1c-5f0b-471d-8170-1e5ecccb1d4b))
 
-  (wire (pts (xy 96.52 46.99) (xy 176.53 46.99))
+  (wire (pts (xy 81.915 46.99) (xy 94.615 46.99))
     (stroke (width 0) (type default))
     (uuid 00df3091-9d74-428b-896a-02f842ea2083)
   )
-  (wire (pts (xy 90.17 44.45) (xy 127.635 44.45))
+  (wire (pts (xy 94.615 46.99) (xy 94.615 63.5))
+    (stroke (width 0) (type default))
+    (uuid 077c15a7-f628-4276-a1a4-4cbabe445942)
+  )
+  (wire (pts (xy 81.915 44.45) (xy 127.635 44.45))
     (stroke (width 0) (type default))
     (uuid 0789e87d-136e-4852-b40b-bb3fa28eb142)
   )
@@ -689,21 +770,17 @@
     (stroke (width 0) (type default))
     (uuid 24123b0d-e92e-4da8-a530-d961b0972f12)
   )
-  (wire (pts (xy 102.87 68.58) (xy 102.87 52.07))
-    (stroke (width 0) (type default))
-    (uuid 25ac8528-3e00-4b3a-aee0-0fc782aebcbd)
-  )
   (wire (pts (xy 74.93 137.16) (xy 78.74 137.16))
     (stroke (width 0) (type default))
     (uuid 444d36a0-0ded-4c84-9c05-de7abbc41adf)
   )
-  (wire (pts (xy 96.52 68.58) (xy 96.52 46.99))
-    (stroke (width 0) (type default))
-    (uuid 46a31f2c-ded9-4d31-ae59-c4fdaddfbbd9)
-  )
-  (wire (pts (xy 102.87 52.07) (xy 147.32 52.07))
+  (wire (pts (xy 81.915 52.07) (xy 97.155 52.07))
     (stroke (width 0) (type default))
     (uuid 4980579d-b066-4fc8-9500-97a1ef5388af)
+  )
+  (wire (pts (xy 94.615 46.99) (xy 176.53 46.99))
+    (stroke (width 0) (type default))
+    (uuid 4e858ff2-23ab-423e-a25d-a262db49c661)
   )
   (wire (pts (xy 121.92 132.08) (xy 121.92 123.825))
     (stroke (width 0) (type default))
@@ -713,13 +790,13 @@
     (stroke (width 0) (type default))
     (uuid 59316e5e-c2d4-4299-b1c5-ebe0b4b755ae)
   )
-  (wire (pts (xy 81.915 52.07) (xy 102.87 52.07))
+  (wire (pts (xy 99.695 54.61) (xy 147.32 54.61))
     (stroke (width 0) (type default))
-    (uuid 5c5b8a14-3e82-4c8c-a268-02aa1b603e5d)
+    (uuid 65e716dc-23ca-4aa6-814a-e39ed634bd22)
   )
-  (wire (pts (xy 81.915 44.45) (xy 90.17 44.45))
+  (wire (pts (xy 97.155 52.07) (xy 147.32 52.07))
     (stroke (width 0) (type default))
-    (uuid 776ffef9-dfc4-4c85-b3e1-0ee8718d73da)
+    (uuid 6d9d4c3e-a3cf-4c53-90ea-a9ef3ad99d7f)
   )
   (wire (pts (xy 106.68 139.065) (xy 106.68 137.16))
     (stroke (width 0) (type default))
@@ -733,15 +810,7 @@
     (stroke (width 0) (type default))
     (uuid a7448c75-82d7-438e-9ac4-e591aa02a6f4)
   )
-  (wire (pts (xy 90.17 68.58) (xy 90.17 44.45))
-    (stroke (width 0) (type default))
-    (uuid b8e6fd19-8f5b-478a-ac3d-f29166cd4925)
-  )
-  (wire (pts (xy 109.22 54.61) (xy 81.915 54.61))
-    (stroke (width 0) (type default))
-    (uuid b9be64af-4d8a-4959-b310-d8a32369ccae)
-  )
-  (wire (pts (xy 147.32 54.61) (xy 109.22 54.61))
+  (wire (pts (xy 81.915 54.61) (xy 99.695 54.61))
     (stroke (width 0) (type default))
     (uuid c1655356-1f19-4ad5-8ef3-84ff2d891bce)
   )
@@ -757,6 +826,10 @@
     (stroke (width 0) (type default))
     (uuid c50501a1-20a9-4b96-a1b7-7af15496d326)
   )
+  (wire (pts (xy 99.695 54.61) (xy 99.695 63.5))
+    (stroke (width 0) (type default))
+    (uuid c801dc38-8c09-4be0-bb61-a37bd8b7ffb8)
+  )
   (wire (pts (xy 147.955 134.62) (xy 147.955 123.825))
     (stroke (width 0) (type default))
     (uuid d104d8e9-a96e-4886-8318-80fef59911ef)
@@ -764,10 +837,6 @@
   (wire (pts (xy 147.955 121.92) (xy 147.955 123.825))
     (stroke (width 0) (type default))
     (uuid d943c289-1e77-41e3-a35e-b0a383681cdd)
-  )
-  (wire (pts (xy 81.915 46.99) (xy 96.52 46.99))
-    (stroke (width 0) (type default))
-    (uuid e07de49d-1b4a-4733-942e-4c04d01aa434)
   )
   (wire (pts (xy 147.32 44.45) (xy 135.255 44.45))
     (stroke (width 0) (type default))
@@ -777,13 +846,13 @@
     (stroke (width 0) (type default))
     (uuid ec615081-037f-4430-a29c-6dd753c6c0f0)
   )
+  (wire (pts (xy 97.155 52.07) (xy 97.155 63.5))
+    (stroke (width 0) (type default))
+    (uuid f494a601-2a76-428f-9aa8-95bb5958efa3)
+  )
   (wire (pts (xy 121.92 123.825) (xy 127 123.825))
     (stroke (width 0) (type default))
     (uuid f4e9206e-3c17-4cf4-8d66-c9cc298b5d39)
-  )
-  (wire (pts (xy 109.22 68.58) (xy 109.22 54.61))
-    (stroke (width 0) (type default))
-    (uuid fa2f3a9a-302c-4ca1-a013-4ce6ea03d5c2)
   )
 
   (global_label "~{PIC18F_MCLR}" (shape passive) (at 147.32 44.45 0) (fields_autoplaced)
@@ -812,127 +881,6 @@
     (uuid ca04076b-68ec-43bb-9ae3-a854be94f8a8)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 179.0386 123.825 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 96.52 73.66 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 07156a95-905e-47dd-98ec-cd2ec0a3ecd3)
-    (property "Reference" "#PWR?" (at 96.52 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 96.52 77.47 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 96.52 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 96.52 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8e0fb64d-e0a9-444d-855c-6aaf50004ef4))
-    (instances
-      (project "Analog_Clock"
-        (path "/0dc9b974-a945-4291-bc55-04b8e342b0e5/00000000-0000-0000-0000-00005e939eaf"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-      (project "Nixie_Clock_Core"
-        (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0802") (unit 1)
-        )
-      )
-      (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0602") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Power_Protection:PESD3V3L5UY") (at 96.52 71.12 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 071c3919-931d-4c93-a73f-53c351dd3f30)
-    (property "Reference" "D?" (at 99.06 71.12 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PESD3V3L5UY" (at 85.09 71.12 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 96.52 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXL5UF_V_Y.pdf" (at 96.52 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digi-Key PN" "1727-3828-1-ND" (at 96.52 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a69d9a64-6453-4ce1-be3c-444d37b55fef))
-    (pin "2" (uuid 5ef9d559-720b-4c27-9dde-eb8cef8859a5))
-    (pin "3" (uuid 6487a201-457e-42d7-920c-07700f78e004))
-    (pin "4" (uuid f2613d8d-07ae-43fd-87fb-26a8ee162774))
-    (pin "5" (uuid f01f7e3d-aacb-479e-9363-602a535eb4cd))
-    (pin "6" (uuid f9e4bf44-6113-4f2d-9734-01fdf27bc43b))
-    (instances
-      (project "Analog_Clock"
-        (path "/0dc9b974-a945-4291-bc55-04b8e342b0e5/00000000-0000-0000-0000-00005e939eaf"
-          (reference "D?") (unit 1)
-        )
-      )
-      (project "Nixie_Clock_Core"
-        (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "D801") (unit 1)
-        )
-      )
-      (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "D?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Power_Protection:PESD3V3L5UY") (at 115.57 71.12 270) (unit 3)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0fa346f3-94bb-4cc2-a5a5-605014c4433a)
-    (property "Reference" "D?" (at 118.11 71.12 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PESD3V3L5UY" (at 113.03 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 115.57 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXL5UF_V_Y.pdf" (at 115.57 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digi-Key PN" "1727-3828-1-ND" (at 115.57 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 617bdb13-c20a-46d9-9c56-13f6cedddfef))
-    (pin "2" (uuid 28ca35a0-cecc-4a73-8d44-3e1e51ceaaec))
-    (pin "3" (uuid 8892062a-2b4a-4009-b3a6-de2b9e7b7db5))
-    (pin "4" (uuid 909911bd-b18a-4f8c-815b-3b26a992c2cf))
-    (pin "5" (uuid 67a1bc3c-a6df-4cc1-a83b-f98130c66459))
-    (pin "6" (uuid edb6f3d0-3afc-4d1f-9e91-9d969f9d1049))
-    (instances
-      (project "Analog_Clock"
-        (path "/0dc9b974-a945-4291-bc55-04b8e342b0e5/00000000-0000-0000-0000-00005e939eaf"
-          (reference "D?") (unit 3)
-        )
-      )
-      (project "Nixie_Clock_Core"
-        (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "D801") (unit 3)
-        )
-      )
-      (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "D?") (unit 3)
-        )
-      )
     )
   )
 
@@ -994,12 +942,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "R804") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "R?") (unit 1)
+          (reference "R904") (unit 1)
         )
       )
     )
@@ -1042,55 +990,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "R801") (unit 1)
-        )
-      )
-      (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
           (reference "R?") (unit 1)
         )
       )
-    )
-  )
-
-  (symbol (lib_id "Power_Protection:PESD3V3L5UY") (at 109.22 71.12 270) (unit 4)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3ee0f026-ef68-46f3-b040-a3c4c67d3ebe)
-    (property "Reference" "D?" (at 111.76 71.12 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PESD3V3L5UY" (at 106.68 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 109.22 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXL5UF_V_Y.pdf" (at 109.22 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digi-Key PN" "1727-3828-1-ND" (at 109.22 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0f0fd434-88e7-4ec8-8cbf-b1189405a3cb))
-    (pin "2" (uuid b66599fd-e34f-4969-ac69-befd3b0bd128))
-    (pin "3" (uuid f6af8b3f-58bf-4370-b30e-03eb4cffd62a))
-    (pin "4" (uuid 34ed45ce-15ed-4ca9-a082-69399c995ffe))
-    (pin "5" (uuid a8c9ccf9-e388-479d-8744-694c9170e8bc))
-    (pin "6" (uuid e34992d7-3920-432a-9965-7ec33d0f2254))
-    (instances
-      (project "Analog_Clock"
-        (path "/0dc9b974-a945-4291-bc55-04b8e342b0e5/00000000-0000-0000-0000-00005e939eaf"
-          (reference "D?") (unit 4)
-        )
-      )
-      (project "Nixie_Clock_Core"
-        (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "D801") (unit 4)
-        )
-      )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "D?") (unit 4)
+          (reference "R901") (unit 1)
         )
       )
     )
@@ -1139,12 +1044,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "L801") (unit 1)
+          (reference "L?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "L?") (unit 1)
+          (reference "L901") (unit 1)
         )
       )
     )
@@ -1187,12 +1092,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "C802") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "C?") (unit 1)
+          (reference "C902") (unit 1)
         )
       )
     )
@@ -1222,55 +1127,43 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0804") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0604") (unit 1)
+          (reference "#PWR0904") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Power_Protection:PESD3V3L5UY") (at 102.87 71.12 270) (unit 5)
+  (symbol (lib_id "power:GND") (at 97.155 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7f6bfa1a-3ee8-4c85-b999-63a9b9a00c9a)
-    (property "Reference" "D?" (at 105.41 71.12 0)
+    (uuid 81d0229f-4e5e-4a0a-9459-b93c77c78884)
+    (property "Reference" "#PWR?" (at 97.155 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 97.155 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "PESD3V3L5UY" (at 100.33 71.12 0)
+    (property "Footprint" "" (at 97.155 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 102.87 71.12 0)
+    (property "Datasheet" "" (at 97.155 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXL5UF_V_Y.pdf" (at 102.87 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digi-Key PN" "1727-3828-1-ND" (at 102.87 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 09984d87-a996-4248-b97a-22c76941a00f))
-    (pin "2" (uuid 83d83bbb-fcd9-4198-ba35-695e56e95fe2))
-    (pin "3" (uuid aed71e5d-5f26-400d-9278-f586a972a19b))
-    (pin "4" (uuid 20e45a66-2e65-4fd3-a9af-42dbadf8a39d))
-    (pin "5" (uuid 74bab4fc-0e9f-457d-b1f5-8baf41f9ad48))
-    (pin "6" (uuid 1390a2cb-4db4-4c0d-823f-9b4ee4e0c545))
+    (pin "1" (uuid f961114e-70ac-4115-b038-4d06a758f6b1))
     (instances
-      (project "Analog_Clock"
-        (path "/0dc9b974-a945-4291-bc55-04b8e342b0e5/00000000-0000-0000-0000-00005e939eaf"
-          (reference "D?") (unit 5)
-        )
-      )
-      (project "Nixie_Clock_Core"
-        (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "D801") (unit 5)
-        )
-      )
       (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7ad"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
+          (reference "#PWR?") (unit 1)
+        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "D?") (unit 5)
+          (reference "#PWR0902") (unit 1)
         )
       )
     )
@@ -1305,12 +1198,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "Q801") (unit 1)
+          (reference "Q?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "Q?") (unit 1)
+          (reference "Q901") (unit 1)
         )
       )
     )
@@ -1377,12 +1270,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "R802") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "R?") (unit 1)
+          (reference "R902") (unit 1)
         )
       )
     )
@@ -1412,12 +1305,43 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0809") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0609") (unit 1)
+          (reference "#PWR0909") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Power_Protection:SP0503BAHT") (at 97.155 68.58 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 90402ae5-b859-4894-b84a-a4774168001d)
+    (property "Reference" "D?" (at 102.87 66.04 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "SP0503BAHT" (at 102.87 67.945 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-143" (at 102.87 69.85 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Datasheet" "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" (at 100.33 65.405 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fa283be2-d61c-41ff-9df0-e9ab039a2f86))
+    (pin "2" (uuid dac4eb30-5e59-4a41-8747-8dd60fbe9022))
+    (pin "3" (uuid b8c333b5-bf71-4a0f-9d76-f75900bcc689))
+    (pin "4" (uuid 9bf050c8-88e7-491a-97a1-a1210251d3b2))
+    (instances
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
+          (reference "D?") (unit 1)
+        )
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
+          (reference "D901") (unit 1)
         )
       )
     )
@@ -1447,12 +1371,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0806") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0606") (unit 1)
+          (reference "#PWR0906") (unit 1)
         )
       )
     )
@@ -1495,12 +1419,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "R803") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "R?") (unit 1)
+          (reference "R903") (unit 1)
         )
       )
     )
@@ -1530,12 +1454,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0807") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0607") (unit 1)
+          (reference "#PWR0907") (unit 1)
         )
       )
     )
@@ -1566,12 +1490,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "SW801") (unit 1)
+          (reference "SW?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "SW?") (unit 1)
+          (reference "SW901") (unit 1)
         )
       )
     )
@@ -1601,12 +1525,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0805") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0605") (unit 1)
+          (reference "#PWR0905") (unit 1)
         )
       )
     )
@@ -1636,12 +1560,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0803") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0603") (unit 1)
+          (reference "#PWR0903") (unit 1)
         )
       )
     )
@@ -1671,12 +1595,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0810") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0610") (unit 1)
+          (reference "#PWR0910") (unit 1)
         )
       )
     )
@@ -1706,12 +1630,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0808") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0608") (unit 1)
+          (reference "#PWR0908") (unit 1)
         )
       )
     )
@@ -1754,12 +1678,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "C801") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "C?") (unit 1)
+          (reference "C901") (unit 1)
         )
       )
     )
@@ -1808,12 +1732,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "L802") (unit 1)
+          (reference "L?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "L?") (unit 1)
+          (reference "L902") (unit 1)
         )
       )
     )
@@ -1843,12 +1767,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "#PWR0801") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "#PWR0601") (unit 1)
+          (reference "#PWR0901") (unit 1)
         )
       )
     )
@@ -1885,12 +1809,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "J801") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "J?") (unit 1)
+          (reference "J901") (unit 1)
         )
       )
     )
@@ -1933,55 +1857,12 @@
       )
       (project "Nixie_Clock_Core"
         (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "R805") (unit 1)
-        )
-      )
-      (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
           (reference "R?") (unit 1)
         )
       )
-    )
-  )
-
-  (symbol (lib_id "Power_Protection:PESD3V3L5UY") (at 90.17 71.12 270) (unit 2)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid fcb37c90-d41f-41a7-979f-f08819670dad)
-    (property "Reference" "D?" (at 92.71 71.12 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PESD3V3L5UY" (at 87.63 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 90.17 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXL5UF_V_Y.pdf" (at 90.17 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digi-Key PN" "1727-3828-1-ND" (at 90.17 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 135ef599-7cfd-4366-808e-a74671756af0))
-    (pin "2" (uuid 59e5bd3d-4329-4ab3-a42d-868ae563cc0a))
-    (pin "3" (uuid cc6e46e6-7aa3-4e2f-9cde-e4a3c9f5fef5))
-    (pin "4" (uuid a078e0f8-34df-46b9-a9af-c8fda61a2231))
-    (pin "5" (uuid 8bd3ebeb-c0fd-4158-9e2f-01aa5f6d52d1))
-    (pin "6" (uuid 95b8edfb-2b8b-4686-aaea-4c34fda0f47f))
-    (instances
-      (project "Analog_Clock"
-        (path "/0dc9b974-a945-4291-bc55-04b8e342b0e5/00000000-0000-0000-0000-00005e939eaf"
-          (reference "D?") (unit 2)
-        )
-      )
-      (project "Nixie_Clock_Core"
-        (path "/16fdce21-b570-4d81-a458-e8839d611806/0953f70f-0c64-48c1-b5cf-d1f41f95ef1f"
-          (reference "D801") (unit 2)
-        )
-      )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7e6"
-          (reference "D?") (unit 2)
+          (reference "R905") (unit 1)
         )
       )
     )

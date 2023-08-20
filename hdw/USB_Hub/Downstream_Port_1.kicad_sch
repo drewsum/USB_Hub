@@ -6,7 +6,7 @@
 
   (title_block
     (title "USB Hub")
-    (date "2023-08-18")
+    (date "2023-08-20")
     (rev "PRELIM")
     (company "Drew Maatman")
   )
@@ -629,6 +629,46 @@
         )
       )
     )
+    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#FLG" (at 0 1.905 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "PWR_FLAG" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "flag power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line (at 0 0 90) (length 0)
+          (name "pwr" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+    )
   )
 
   (junction (at 106.68 83.82) (diameter 0) (color 0 0 0 0)
@@ -677,6 +717,10 @@
   (wire (pts (xy 106.68 83.82) (xy 106.68 88.9))
     (stroke (width 0) (type default))
     (uuid 5fef7c76-be15-4f6c-a266-b08f40ecfa55)
+  )
+  (wire (pts (xy 185.42 74.93) (xy 185.42 76.2))
+    (stroke (width 0) (type default))
+    (uuid 6a09100b-a65b-4ba2-85ca-422961f09ca0)
   )
   (wire (pts (xy 157.48 81.28) (xy 198.12 81.28))
     (stroke (width 0) (type default))
@@ -812,7 +856,7 @@
           (reference "R?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "R?") (unit 1)
+          (reference "R1902") (unit 1)
         )
       )
     )
@@ -843,7 +887,7 @@
           (reference "D?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "D?") (unit 1)
+          (reference "D1901") (unit 1)
         )
       )
     )
@@ -887,7 +931,7 @@
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "C?") (unit 1)
+          (reference "C1901") (unit 1)
         )
       )
     )
@@ -931,7 +975,7 @@
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "C?") (unit 1)
+          (reference "C1903") (unit 1)
         )
       )
     )
@@ -975,7 +1019,7 @@
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "C?") (unit 1)
+          (reference "C1902") (unit 1)
         )
       )
     )
@@ -1003,10 +1047,10 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01501") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01604") (unit 1)
+          (reference "#PWR01904") (unit 1)
         )
       )
     )
@@ -1050,7 +1094,7 @@
           (reference "R?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "R?") (unit 1)
+          (reference "R1901") (unit 1)
         )
       )
     )
@@ -1078,10 +1122,10 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01504") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01602") (unit 1)
+          (reference "#PWR01902") (unit 1)
         )
       )
     )
@@ -1109,10 +1153,10 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01503") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01603") (unit 1)
+          (reference "#PWR01903") (unit 1)
         )
       )
     )
@@ -1121,7 +1165,7 @@
   (symbol (lib_id "Custom Library:CHASSIS") (at 210.82 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7f610568-cbef-4ef7-a0ca-77f1ac7dd473)
-    (property "Reference" "#PWR01506" (at 210.82 101.6 0)
+    (property "Reference" "#PWR?" (at 210.82 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "CHASSIS" (at 210.82 100.33 0)
@@ -1137,10 +1181,10 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01506") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01606") (unit 1)
+          (reference "#PWR01906") (unit 1)
         )
       )
     )
@@ -1168,10 +1212,10 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01505") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01601") (unit 1)
+          (reference "#PWR01901") (unit 1)
         )
       )
     )
@@ -1199,10 +1243,38 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01502") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01605") (unit 1)
+          (reference "#PWR01905") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 185.42 74.93 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b4a8bc9c-d6b1-46a3-83ad-6f803bcba046)
+    (property "Reference" "#FLG?" (at 185.42 73.025 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 185.42 71.12 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 185.42 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 185.42 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c88ef6ed-b800-4613-9064-f08a2632ffad))
+    (instances
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
+          (reference "#FLG?") (unit 1)
+        )
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
+          (reference "#FLG01901") (unit 1)
         )
       )
     )
@@ -1234,7 +1306,7 @@
           (reference "J?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "J?") (unit 1)
+          (reference "J1901") (unit 1)
         )
       )
     )

@@ -6,7 +6,7 @@
 
   (title_block
     (title "USB Hub")
-    (date "2023-08-18")
+    (date "2023-08-20")
     (rev "PRELIM")
     (company "Drew Maatman")
   )
@@ -1221,11 +1221,25 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
+  (global_label "POS5P_RUN" (shape output) (at 41.91 172.72 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 197c74e8-06a9-4ef3-b436-cd69033aec6f)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.91 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
   (global_label "POS5P_RUN" (shape input) (at 119.38 73.66 180)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 3a6ac768-ad8f-4f19-ad93-f71ee0d86f68)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+  (global_label "POS12_PGOOD" (shape input) (at 34.29 172.72 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 47a636f3-83cd-4a33-8a32-656e04bafbf2)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 34.29 172.72 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "POS5P_RUN" (shape input) (at 63.5 96.52 0)
@@ -1290,7 +1304,7 @@
           (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "R613") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005c1de17a"
           (reference "R?") (unit 1)
@@ -1310,7 +1324,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "R?") (unit 1)
+          (reference "R408") (unit 1)
         )
       )
     )
@@ -1360,7 +1374,7 @@
           (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "R601") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005c1de17a"
           (reference "R?") (unit 1)
@@ -1380,7 +1394,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "R?") (unit 1)
+          (reference "R403") (unit 1)
         )
       )
     )
@@ -1427,7 +1441,7 @@
           (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "C602") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "C?") (unit 1)
@@ -1435,7 +1449,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "C?") (unit 1)
+          (reference "C402") (unit 1)
         )
       )
     )
@@ -1500,7 +1514,7 @@
           (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "R612") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005d779ae1"
           (reference "R?") (unit 1)
@@ -1514,7 +1528,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "R?") (unit 1)
+          (reference "R407") (unit 1)
         )
       )
     )
@@ -1523,7 +1537,7 @@
   (symbol (lib_id "power:+5VP") (at 66.04 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1a3afeed-5202-4a6d-991f-2479a0939dcf)
-    (property "Reference" "#PWR0402" (at 66.04 82.55 0)
+    (property "Reference" "#PWR0408" (at 66.04 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VP" (at 66.04 75.184 0)
@@ -1539,7 +1553,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0402") (unit 1)
+          (reference "#PWR0408") (unit 1)
         )
       )
     )
@@ -1595,7 +1609,7 @@
           (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "C605") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005bb27b24"
           (reference "C?") (unit 1)
@@ -1621,7 +1635,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "C?") (unit 1)
+          (reference "C405") (unit 1)
         )
       )
     )
@@ -1655,7 +1669,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0620") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -1663,7 +1677,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0420") (unit 1)
+          (reference "#PWR0419") (unit 1)
         )
       )
     )
@@ -1672,7 +1686,7 @@
   (symbol (lib_id "power:+5VP") (at 144.78 73.66 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 280d3c21-f853-47e6-85e7-a337c252339b)
-    (property "Reference" "#PWR0419" (at 140.97 73.66 0)
+    (property "Reference" "#PWR0418" (at 140.97 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VP" (at 148.59 73.66 90)
@@ -1688,7 +1702,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0419") (unit 1)
+          (reference "#PWR0418") (unit 1)
         )
       )
     )
@@ -1722,7 +1736,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0606") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -1764,7 +1778,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0607") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -1805,12 +1819,12 @@
           (reference "Q?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "Q601") (unit 1)
+          (reference "Q?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "Q?") (unit 1)
+          (reference "Q401") (unit 1)
         )
       )
     )
@@ -1844,7 +1858,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0605") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -1853,6 +1867,58 @@
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
           (reference "#PWR0405") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Custom_Library:R_Custom") (at 38.1 172.72 90) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3d616958-32af-4c8d-94a8-714a3025f326)
+    (property "Reference" "R?" (at 38.1 175.26 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "0" (at 37.465 172.72 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Resistors_SMD:R_0402" (at 38.1 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 38.1 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "display_footprint" "0402" (at 35.814 170.18 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Tolerance" "1%" (at 38.1 170.18 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Wattage" "1/16W" (at 40.64 170.18 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Digi-Key PN" "RMCF0402ZT0R00CT-ND" (at 38.1 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4437e8a7-7a70-4754-9685-48a30f9ecbf3))
+    (pin "2" (uuid 66e087cf-2977-4a72-b7f3-d47808974f76))
+    (instances
+      (project "LED_Panel_Controller"
+        (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005eae30c7"
+          (reference "R?") (unit 1)
+        )
+        (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
+          (reference "R?") (unit 1)
+        )
+        (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005eae2d8a"
+          (reference "R?") (unit 1)
+        )
+        (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005eae2ef2"
+          (reference "R?") (unit 1)
+        )
+      )
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
+          (reference "R402") (unit 1)
         )
       )
     )
@@ -1902,7 +1968,7 @@
           (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "C604") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005c1e3a0b"
           (reference "C?") (unit 1)
@@ -1922,7 +1988,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "C?") (unit 1)
+          (reference "C404") (unit 1)
         )
       )
     )
@@ -1931,7 +1997,7 @@
   (symbol (lib_id "Custom_Library:L_Custom") (at 156.21 63.5 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4735d2ec-f2a5-481b-adee-9d0bcfc1ed05)
-    (property "Reference" "L601" (at 156.21 64.77 90)
+    (property "Reference" "L?" (at 156.21 64.77 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.2uH" (at 156.21 61.595 90)
@@ -1960,7 +2026,7 @@
     (instances
       (project "LED_Panel_Controller"
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "L601") (unit 1)
+          (reference "L?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5"
           (reference "L?") (unit 1)
@@ -1968,7 +2034,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "L?") (unit 1)
+          (reference "L401") (unit 1)
         )
       )
     )
@@ -1996,7 +2062,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0611") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
@@ -2066,7 +2132,7 @@
           (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "C603") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005eae2f02"
           (reference "C?") (unit 1)
@@ -2074,7 +2140,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "C?") (unit 1)
+          (reference "C403") (unit 1)
         )
       )
     )
@@ -2121,7 +2187,7 @@
           (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "C607") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "C?") (unit 1)
@@ -2129,7 +2195,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "C?") (unit 1)
+          (reference "C407") (unit 1)
         )
       )
     )
@@ -2138,7 +2204,7 @@
   (symbol (lib_id "power:+5VP") (at 228.6 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 63a8aa87-0010-4463-85a5-2dbab5164e8b)
-    (property "Reference" "#PWR0414" (at 228.6 64.77 0)
+    (property "Reference" "#PWR0423" (at 228.6 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VP" (at 228.6 57.404 0)
@@ -2154,7 +2220,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0414") (unit 1)
+          (reference "#PWR0423") (unit 1)
         )
       )
     )
@@ -2188,7 +2254,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0615") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -2196,7 +2262,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0415") (unit 1)
+          (reference "#PWR0414") (unit 1)
         )
       )
     )
@@ -2243,7 +2309,7 @@
           (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "C606") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "C?") (unit 1)
@@ -2251,7 +2317,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "C?") (unit 1)
+          (reference "C406") (unit 1)
         )
       )
     )
@@ -2285,7 +2351,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0621") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -2293,7 +2359,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0421") (unit 1)
+          (reference "#PWR0420") (unit 1)
         )
       )
     )
@@ -2327,7 +2393,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0622") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -2335,7 +2401,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0422") (unit 1)
+          (reference "#PWR0421") (unit 1)
         )
       )
     )
@@ -2385,7 +2451,7 @@
           (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "R602") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005c1de17a"
           (reference "R?") (unit 1)
@@ -2405,7 +2471,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "R?") (unit 1)
+          (reference "R404") (unit 1)
         )
       )
     )
@@ -2414,7 +2480,7 @@
   (symbol (lib_id "power:+5VP") (at 118.11 161.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7b6f3754-c329-4f5a-a7c6-974193d6a6a6)
-    (property "Reference" "#PWR0424" (at 118.11 165.1 0)
+    (property "Reference" "#PWR0415" (at 118.11 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VP" (at 118.11 157.734 0)
@@ -2430,7 +2496,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0424") (unit 1)
+          (reference "#PWR0415") (unit 1)
         )
       )
     )
@@ -2480,7 +2546,7 @@
           (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "R601") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005c1de17a"
           (reference "R?") (unit 1)
@@ -2500,7 +2566,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "R?") (unit 1)
+          (reference "R401") (unit 1)
         )
       )
     )
@@ -2565,7 +2631,7 @@
           (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "R603") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0dc082"
           (reference "R?") (unit 1)
@@ -2573,7 +2639,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "R?") (unit 1)
+          (reference "R405") (unit 1)
         )
       )
     )
@@ -2601,7 +2667,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0610") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
@@ -2615,7 +2681,7 @@
   (symbol (lib_id "power:+5VP") (at 81.28 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 96fa421a-30da-4793-ae1c-bf40aa8de47f)
-    (property "Reference" "#PWR0425" (at 81.28 148.59 0)
+    (property "Reference" "#PWR0409" (at 81.28 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VP" (at 81.28 141.224 0)
@@ -2631,7 +2697,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0425") (unit 1)
+          (reference "#PWR0409") (unit 1)
         )
       )
     )
@@ -2687,7 +2753,7 @@
           (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "C601") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005bb27b24"
           (reference "C?") (unit 1)
@@ -2713,7 +2779,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "C?") (unit 1)
+          (reference "C401") (unit 1)
         )
       )
     )
@@ -2722,7 +2788,7 @@
   (symbol (lib_id "Custom_Library:74LVC1G97_Power_AND") (at 55.88 95.25 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9d8b5a3b-92d8-47ff-a8b6-e9a181cb97db)
-    (property "Reference" "U601" (at 54.356 91.44 0)
+    (property "Reference" "U?" (at 54.356 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "74LVC1G97" (at 51.054 89.154 0)
@@ -2746,12 +2812,12 @@
     (instances
       (project "LED_Panel_Controller"
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "U601") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "U?") (unit 1)
+          (reference "U401") (unit 1)
         )
       )
     )
@@ -2760,7 +2826,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 237.49 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a1e516f9-107c-41cf-ae76-b486b137d3e7)
-    (property "Reference" "#FLG0601" (at 237.49 59.055 0)
+    (property "Reference" "#FLG?" (at 237.49 59.055 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 237.49 57.15 0)
@@ -2776,7 +2842,7 @@
     (instances
       (project "LED_Panel_Controller"
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#FLG0601") (unit 1)
+          (reference "#FLG?") (unit 1)
         )
       )
       (project "USB_Hub"
@@ -2815,7 +2881,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0618") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -2823,7 +2889,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0418") (unit 1)
+          (reference "#PWR0417") (unit 1)
         )
       )
     )
@@ -2857,7 +2923,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0613") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -2899,7 +2965,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0601") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -2950,7 +3016,7 @@
           (reference "TP?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "TP601") (unit 1)
+          (reference "TP?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "TP?") (unit 1)
@@ -2961,7 +3027,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "TP?") (unit 1)
+          (reference "TP401") (unit 1)
         )
       )
     )
@@ -2995,7 +3061,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0612") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -3035,12 +3101,12 @@
           (reference "D?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "D601") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "D?") (unit 1)
+          (reference "D401") (unit 1)
         )
       )
     )
@@ -3049,7 +3115,7 @@
   (symbol (lib_id "power:+5VP") (at 62.23 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cbc27e56-bc30-4326-a82e-9fdfe9fd9e88)
-    (property "Reference" "#PWR0408" (at 62.23 109.22 0)
+    (property "Reference" "#PWR0404" (at 62.23 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VP" (at 62.23 101.854 0)
@@ -3065,7 +3131,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0408") (unit 1)
+          (reference "#PWR0404") (unit 1)
         )
       )
     )
@@ -3098,12 +3164,12 @@
           (reference "Q?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "Q602") (unit 1)
+          (reference "Q?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "Q?") (unit 1)
+          (reference "Q402") (unit 1)
         )
       )
     )
@@ -3112,7 +3178,7 @@
   (symbol (lib_id "power:+5VP") (at 237.49 60.96 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid db415516-59df-46eb-b722-f96ebd0b1051)
-    (property "Reference" "#PWR0416" (at 237.49 57.15 0)
+    (property "Reference" "#PWR0424" (at 237.49 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VP" (at 237.49 64.516 0)
@@ -3128,7 +3194,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0416") (unit 1)
+          (reference "#PWR0424") (unit 1)
         )
       )
     )
@@ -3137,7 +3203,7 @@
   (symbol (lib_id "power:+5VP") (at 55.88 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e151f2b0-8330-41e4-a964-1920ca5fc3a6)
-    (property "Reference" "#PWR0404" (at 55.88 96.52 0)
+    (property "Reference" "#PWR0402" (at 55.88 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VP" (at 55.88 89.154 0)
@@ -3153,7 +3219,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0404") (unit 1)
+          (reference "#PWR0402") (unit 1)
         )
       )
     )
@@ -3165,7 +3231,7 @@
     (property "Reference" "R?" (at 181.61 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0" (at 184.404 106.172 90)
+    (property "Value" "0" (at 184.15 106.045 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistors_SMD:R_0402" (at 184.15 106.68 0)
@@ -3194,7 +3260,7 @@
           (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "R605") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005eae2d8a"
           (reference "R?") (unit 1)
@@ -3205,7 +3271,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "R?") (unit 1)
+          (reference "R406") (unit 1)
         )
       )
     )
@@ -3233,12 +3299,12 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0617") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0417") (unit 1)
+          (reference "#PWR0416") (unit 1)
         )
       )
     )
@@ -3272,7 +3338,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0603") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -3314,7 +3380,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "#PWR0623") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005e0f263a"
           (reference "#PWR?") (unit 1)
@@ -3322,7 +3388,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "#PWR0423") (unit 1)
+          (reference "#PWR0422") (unit 1)
         )
       )
     )
@@ -3331,7 +3397,7 @@
   (symbol (lib_id "Custom_Library:TPS62130") (at 132.08 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb914ef9-6719-4676-a780-ff432387df14)
-    (property "Reference" "U602" (at 132.08 49.53 0)
+    (property "Reference" "U?" (at 132.08 49.53 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TPS62133" (at 132.08 81.28 0)
@@ -3366,7 +3432,7 @@
     (instances
       (project "LED_Panel_Controller"
         (path "/9a153a92-537f-48f9-b716-589877e287a5/00000000-0000-0000-0000-00005f581ba3"
-          (reference "U602") (unit 1)
+          (reference "U?") (unit 1)
         )
         (path "/9a153a92-537f-48f9-b716-589877e287a5"
           (reference "U?") (unit 1)
@@ -3374,7 +3440,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7c7"
-          (reference "U?") (unit 1)
+          (reference "U402") (unit 1)
         )
       )
     )

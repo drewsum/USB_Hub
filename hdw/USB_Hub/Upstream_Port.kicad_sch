@@ -6,7 +6,7 @@
 
   (title_block
     (title "USB Hub")
-    (date "2023-08-18")
+    (date "2023-08-20")
     (rev "PRELIM")
     (company "Drew Maatman")
   )
@@ -160,6 +160,97 @@
         (pin passive line (at -2.54 -10.16 90) (length 2.54)
           (name "Shield" (effects (font (size 1.27 1.27))))
           (number "6" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Custom Library:CHASSIS" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR01506" (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "CHASSIS" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 -1.27 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 -1.27 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global ground" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"GNDPWR\" , global ground" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "CHASSIS_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.016 -1.27)
+            (xy -1.27 -2.032)
+            (xy -1.27 -2.032)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -0.508 -1.27)
+            (xy -0.762 -2.032)
+            (xy -0.762 -2.032)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy -0.254 -2.032)
+            (xy -0.254 -2.032)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.508 -1.27)
+            (xy 0.254 -2.032)
+            (xy 0.254 -2.032)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.016 -1.27)
+            (xy -1.016 -1.27)
+            (xy -1.016 -1.27)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.016 -1.27)
+            (xy 0.762 -2.032)
+            (xy 0.762 -2.032)
+            (xy 0.762 -2.032)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "CHASSIS_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide
+          (name "CHASSIS" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -369,62 +460,6 @@
         )
       )
     )
-    (symbol "Device:Ferrite_Bead" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "FB" (at -3.81 0.635 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Device_Ferrite_Bead" (at 3.81 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Inductor_* L_* *Ferrite*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Ferrite_Bead_0_1"
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy 0 -1.2192)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.27)
-            (xy 0 1.2954)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.7686 0.4064)
-            (xy -1.7018 2.2606)
-            (xy 2.7686 -0.3048)
-            (xy 1.6764 -2.159)
-            (xy -2.7686 0.4064)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "Ferrite_Bead_1_1"
-        (pin passive line (at 0 3.81 270) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -565,6 +600,9 @@
   (junction (at 127 109.855) (diameter 0) (color 0 0 0 0)
     (uuid 09a0b8a3-e501-4c6a-a185-b3edd48d3a7f)
   )
+  (junction (at 174.625 82.55) (diameter 0) (color 0 0 0 0)
+    (uuid 0ff40d91-8507-4d82-a770-36d910bfa5d8)
+  )
   (junction (at 129.54 112.395) (diameter 0) (color 0 0 0 0)
     (uuid 9115126b-0631-4442-ae65-68755eeb750d)
   )
@@ -601,13 +639,29 @@
     (stroke (width 0) (type default))
     (uuid 23780d5a-3d8e-47b1-9a89-87ad93de392e)
   )
-  (wire (pts (xy 53.34 123.19) (xy 53.34 121.92))
+  (wire (pts (xy 75.565 123.825) (xy 78.105 123.825))
     (stroke (width 0) (type default))
-    (uuid 3c88d5ae-f33a-43e9-be05-e452f1eedc36)
+    (uuid 278f3daa-18e9-4089-98dd-07a7503cb151)
+  )
+  (wire (pts (xy 80.645 123.825) (xy 80.645 120.015))
+    (stroke (width 0) (type default))
+    (uuid 3316864d-f3a7-43a6-89c2-bd1fd59baca5)
+  )
+  (wire (pts (xy 187.325 81.28) (xy 187.325 82.55))
+    (stroke (width 0) (type default))
+    (uuid 3382f966-4f41-458d-bff0-70cf44239e2c)
+  )
+  (wire (pts (xy 187.325 82.55) (xy 174.625 82.55))
+    (stroke (width 0) (type default))
+    (uuid 3407a926-a037-4d63-a0dd-7a062708d157)
   )
   (wire (pts (xy 201.295 109.855) (xy 168.91 109.855))
     (stroke (width 0) (type default))
     (uuid 3df5d5bc-eaa7-45ad-97d9-593d58080284)
+  )
+  (wire (pts (xy 78.105 120.015) (xy 78.105 123.825))
+    (stroke (width 0) (type default))
+    (uuid 4878299e-443c-441a-bf72-503605118b29)
   )
   (wire (pts (xy 121.92 77.47) (xy 118.745 77.47))
     (stroke (width 0) (type default))
@@ -625,21 +679,9 @@
     (stroke (width 0) (type default))
     (uuid 6a24f0a1-c847-441f-bf49-07ec9f225d75)
   )
-  (wire (pts (xy 78.105 121.92) (xy 78.105 120.015))
-    (stroke (width 0) (type default))
-    (uuid 819aa112-4866-4004-bffa-972092a7f747)
-  )
-  (wire (pts (xy 68.58 121.92) (xy 78.105 121.92))
-    (stroke (width 0) (type default))
-    (uuid 8a0377f4-639b-4232-9333-4b0b26332a87)
-  )
   (wire (pts (xy 88.265 104.775) (xy 118.745 104.775))
     (stroke (width 0) (type default))
     (uuid 8a332af9-a008-4491-8a8b-3f7c79537009)
-  )
-  (wire (pts (xy 116.84 82.55) (xy 118.745 82.55))
-    (stroke (width 0) (type default))
-    (uuid 8f5e1030-6a8d-4d4a-b54d-daa37116049d)
   )
   (wire (pts (xy 127 92.71) (xy 127 109.855))
     (stroke (width 0) (type default))
@@ -649,9 +691,9 @@
     (stroke (width 0) (type default))
     (uuid a2ad1917-f09c-4ad2-9c39-36b4b87e0fe5)
   )
-  (wire (pts (xy 53.34 121.92) (xy 60.96 121.92))
+  (wire (pts (xy 75.565 125.095) (xy 75.565 123.825))
     (stroke (width 0) (type default))
-    (uuid a6a4da66-2824-4554-a97a-51856a8c19bf)
+    (uuid a3081d53-6bae-4fed-9867-d674fb5b0dfd)
   )
   (wire (pts (xy 161.29 109.855) (xy 151.13 109.855))
     (stroke (width 0) (type default))
@@ -664,6 +706,14 @@
   (wire (pts (xy 174.625 82.55) (xy 165.1 82.55))
     (stroke (width 0) (type default))
     (uuid c73c5caf-217a-4a1a-b60f-ab5b63c322dd)
+  )
+  (wire (pts (xy 83.185 123.825) (xy 80.645 123.825))
+    (stroke (width 0) (type default))
+    (uuid ce755018-ecfe-478c-b408-abec37c9bb1f)
+  )
+  (wire (pts (xy 83.185 125.095) (xy 83.185 123.825))
+    (stroke (width 0) (type default))
+    (uuid e6504ddf-8b5a-44b6-9d7a-4345d4ac9315)
   )
   (wire (pts (xy 151.13 109.855) (xy 127 109.855))
     (stroke (width 0) (type default))
@@ -706,10 +756,72 @@
     )
   )
 
+  (symbol (lib_id "power:PWR_FLAG") (at 187.325 81.28 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 05c3264f-836b-4ab6-a9b1-4bbdcca4fd19)
+    (property "Reference" "#FLG?" (at 187.325 79.375 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 187.325 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 187.325 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 187.325 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0a7690cb-8bb2-4ef8-b8be-86853081b913))
+    (instances
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/5b35e0c1-9928-450a-ba6b-f2a701eceaac"
+          (reference "#FLG?") (unit 1)
+        )
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
+          (reference "#FLG02202") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 83.185 125.095 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 06eba3e2-424d-43c8-bc59-ff980711d2c4)
+    (property "Reference" "#PWR?" (at 83.185 131.445 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 83.185 128.905 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 83.185 125.095 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 83.185 125.095 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 37e20caf-05a8-48fb-ac6f-8ce73e067b05))
+    (instances
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a7ad"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
+          (reference "#PWR02203") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 135.89 92.71 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0fed498b-0b10-40a2-95cf-ca87dd5f528f)
-    (property "Reference" "#PWR01337" (at 135.89 99.06 0)
+    (property "Reference" "#PWR?" (at 135.89 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 135.89 96.52 0)
@@ -725,12 +837,12 @@
     (instances
       (project "Analog_Clock"
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "#PWR01337") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR0832") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
           (reference "#PWR02205") (unit 1)
@@ -742,7 +854,7 @@
   (symbol (lib_id "power:VBUS") (at 165.1 80.645 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 28e4ffa5-188b-46e0-bf18-d51b59d3f139)
-    (property "Reference" "#PWR02012" (at 165.1 84.455 0)
+    (property "Reference" "#PWR?" (at 165.1 84.455 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 165.1 76.835 0)
@@ -758,10 +870,10 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/5b35e0c1-9928-450a-ba6b-f2a701eceaac"
-          (reference "#PWR02012") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "#PWR02201") (unit 1)
+          (reference "#PWR02207") (unit 1)
         )
       )
     )
@@ -770,7 +882,7 @@
   (symbol (lib_id "Custom_Library:R_Custom") (at 165.1 109.855 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41332fc7-b058-4d08-8d42-355234682145)
-    (property "Reference" "R1311" (at 165.1 100.203 90)
+    (property "Reference" "R?" (at 165.1 100.203 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "27" (at 165.1 109.855 90)
@@ -799,7 +911,7 @@
     (instances
       (project "Analog_Clock"
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "R1311") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "USB_Hub"
@@ -807,7 +919,7 @@
           (reference "R?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "R?") (unit 1)
+          (reference "R2201") (unit 1)
         )
       )
     )
@@ -851,40 +963,38 @@
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "C?") (unit 1)
+          (reference "C2201") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 80.645 120.015 0) (mirror y) (unit 1)
+  (symbol (lib_id "Custom Library:CHASSIS") (at 75.565 125.095 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 739edc92-17f2-46a1-abdf-00e75b5664cc)
-    (property "Reference" "#PWR01344" (at 80.645 126.365 0)
+    (uuid 48078012-296b-4dcb-9f92-b3ecd266f346)
+    (property "Reference" "#PWR?" (at 75.565 130.175 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 80.645 123.825 0)
+    (property "Value" "CHASSIS" (at 75.565 128.905 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 80.645 120.015 0)
+    (property "Footprint" "" (at 75.565 126.365 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 80.645 120.015 0)
+    (property "Datasheet" "" (at 75.565 126.365 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ea61c68c-68eb-488c-bbeb-c36a71a5b5bb))
+    (pin "1" (uuid 0bd6ac89-09c6-44ec-b047-65180f1d1601))
     (instances
-      (project "Analog_Clock"
-        (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "#PWR01344") (unit 1)
-        )
-      )
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR0837") (unit 1)
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "#PWR02207") (unit 1)
+          (reference "#PWR02202") (unit 1)
         )
       )
     )
@@ -893,7 +1003,7 @@
   (symbol (lib_id "Connector:USB_B_Mini") (at 80.645 109.855 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 73afc280-bd34-4a52-9afa-2187fcc21f79)
-    (property "Reference" "J1301" (at 74.8284 110.0836 0)
+    (property "Reference" "J?" (at 74.8284 110.0836 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "USB_B_Mini" (at 74.8284 112.395 0)
@@ -917,7 +1027,7 @@
     (instances
       (project "Analog_Clock"
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "J1301") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
       (project "USB_Hub"
@@ -925,7 +1035,7 @@
           (reference "J?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "J?") (unit 1)
+          (reference "J2201") (unit 1)
         )
       )
     )
@@ -934,10 +1044,10 @@
   (symbol (lib_id "Custom_Library:TPD3S014DBVR") (at 135.89 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7ac6fbb3-f1a4-4927-9bbc-64f687343de2)
-    (property "Reference" "U1305" (at 143.51 91.44 0)
+    (property "Reference" "U?" (at 143.51 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TPD3S014DBVR" (at 135.89 73.66 0)
+    (property "Value" "TPD3S044DBVR" (at 135.89 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "TO_SOT_Packages_SMD:SOT-23-6" (at 139.7 96.52 0)
@@ -946,7 +1056,7 @@
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd3s014.pdf" (at 139.7 101.6 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Digi-Key PN" "296-38835-1-ND" (at 139.7 99.06 0)
+    (property "Digi-Key PN" "296-38836-1-ND" (at 139.7 99.06 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (pin "1" (uuid 1a1dc944-5c5c-4e52-970f-86fb82050168))
@@ -958,7 +1068,7 @@
     (instances
       (project "Analog_Clock"
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "U1305") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "USB_Hub"
@@ -966,7 +1076,7 @@
           (reference "U?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "U?") (unit 1)
+          (reference "U2201") (unit 1)
         )
       )
     )
@@ -975,7 +1085,7 @@
   (symbol (lib_id "Custom_Library:R_Custom") (at 165.1 112.395 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8a58e1a3-1fc3-4229-ae90-59923b622e2a)
-    (property "Reference" "R1312" (at 165.1 122.047 90)
+    (property "Reference" "R?" (at 165.1 122.047 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "27" (at 165.1 112.395 90)
@@ -1004,7 +1114,7 @@
     (instances
       (project "Analog_Clock"
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "R1312") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "USB_Hub"
@@ -1012,7 +1122,7 @@
           (reference "R?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "R?") (unit 1)
+          (reference "R2202") (unit 1)
         )
       )
     )
@@ -1040,7 +1150,7 @@
           (reference "TP?") (unit 1)
         )
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "TP1301") (unit 1)
+          (reference "TP?") (unit 1)
         )
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005cad2d97"
           (reference "TP?") (unit 1)
@@ -1054,7 +1164,7 @@
           (reference "TP?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "TP?") (unit 1)
+          (reference "TP2201") (unit 1)
         )
       )
     )
@@ -1063,7 +1173,7 @@
   (symbol (lib_id "Custom_Library:C_Custom") (at 165.1 87.63 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 950c8eeb-a956-4ee7-81c8-1d74f73409ae)
-    (property "Reference" "C1306" (at 164.465 85.09 0)
+    (property "Reference" "C?" (at 164.465 85.09 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 164.465 90.17 0)
@@ -1092,7 +1202,7 @@
     (instances
       (project "Analog_Clock"
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "C1306") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "USB_Hub"
@@ -1100,7 +1210,32 @@
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "C?") (unit 1)
+          (reference "C2203") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 62.865 125.095 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9bcd8bb5-abfc-40b4-93b3-437b761274dc)
+    (property "Reference" "#FLG02201" (at 62.865 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 62.865 121.285 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 62.865 125.095 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 62.865 125.095 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b1d09424-350a-4c12-9059-5f23c069ea40))
+    (instances
+      (project "USB_Hub"
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
+          (reference "#FLG02201") (unit 1)
         )
       )
     )
@@ -1109,7 +1244,7 @@
   (symbol (lib_id "power:GND") (at 165.1 91.44 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9c405a79-206b-4dab-b313-512340ab2a0a)
-    (property "Reference" "#PWR01325" (at 165.1 97.79 0)
+    (property "Reference" "#PWR?" (at 165.1 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 165.1 95.25 0)
@@ -1125,15 +1260,15 @@
     (instances
       (project "Analog_Clock"
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "#PWR01325") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR0821") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "#PWR02203") (unit 1)
+          (reference "#PWR02208") (unit 1)
         )
       )
     )
@@ -1142,7 +1277,7 @@
   (symbol (lib_id "power:GND") (at 129.54 124.46 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9c9811bd-15b7-46b2-afef-509432a6ce11)
-    (property "Reference" "#PWR01338" (at 129.54 130.81 0)
+    (property "Reference" "#PWR?" (at 129.54 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 129.54 128.27 0)
@@ -1158,15 +1293,15 @@
     (instances
       (project "Analog_Clock"
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "#PWR01338") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR0833") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "#PWR02206") (unit 1)
+          (reference "#PWR02204") (unit 1)
         )
       )
     )
@@ -1175,7 +1310,7 @@
   (symbol (lib_id "power:GND") (at 151.13 124.46 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a0e8a851-7f71-49fb-bd63-ca0b900f912e)
-    (property "Reference" "#PWR01333" (at 151.13 130.81 0)
+    (property "Reference" "#PWR?" (at 151.13 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 151.13 128.27 0)
@@ -1191,48 +1326,15 @@
     (instances
       (project "Analog_Clock"
         (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "#PWR01333") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR0828") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "#PWR02204") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 53.34 123.19 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a142c62f-7b56-4c54-81fa-8433af93bab1)
-    (property "Reference" "#PWR01345" (at 53.34 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 53.34 127 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 53.34 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 53.34 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5b741801-6647-436f-9f12-9795f4a607d1))
-    (instances
-      (project "Analog_Clock"
-        (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "#PWR01345") (unit 1)
-        )
-      )
-      (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR0838") (unit 1)
-        )
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "#PWR02208") (unit 1)
+          (reference "#PWR02206") (unit 1)
         )
       )
     )
@@ -1276,77 +1378,38 @@
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "C?") (unit 1)
+          (reference "C2202") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:Ferrite_Bead") (at 64.77 121.92 90) (mirror x) (unit 1)
+  (symbol (lib_id "Custom Library:CHASSIS") (at 62.865 125.095 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid d193e470-ad59-4f85-a431-6b7e804f57b6)
-    (property "Reference" "L1302" (at 64.135 118.11 90)
+    (uuid f1a8429c-011c-48ea-888f-e3fcebd91b71)
+    (property "Reference" "#PWR?" (at 62.865 130.175 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "CHASSIS" (at 62.865 128.905 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "600R 0.5A" (at 64.77 125.73 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Inductors_SMD:L_0603" (at 64.77 120.142 90)
+    (property "Footprint" "" (at 62.865 126.365 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 64.77 121.92 0)
+    (property "Datasheet" "" (at 62.865 126.365 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Digi-Key PN" "732-1593-1-ND" (at 160.274 -120.142 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 33214ade-959e-427a-a0cb-7c38cfe1de70))
-    (pin "2" (uuid 68bd482f-ad60-45af-a048-67a962e1b849))
+    (pin "1" (uuid c243811d-ecca-4236-922e-fe55d9e8c6f1))
     (instances
-      (project "Analog_Clock"
-        (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "L1302") (unit 1)
-        )
-      )
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "L?") (unit 1)
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
+          (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "L?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:PWR_FLAG") (at 116.84 82.55 90) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d7a25aed-5738-4f22-a7c6-b72951341b10)
-    (property "Reference" "#FLG01302" (at 114.935 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "PWR_FLAG" (at 113.03 82.55 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 116.84 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 116.84 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3dc9126b-b5c3-4ae0-8f3e-d4cd8f2027db))
-    (instances
-      (project "Analog_Clock"
-        (path "/4c0a1b3a-0b35-42a0-8d96-e340db30946e/00000000-0000-0000-0000-00005e939f76"
-          (reference "#FLG01302") (unit 1)
-        )
-      )
-      (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#FLG0802") (unit 1)
-        )
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b463"
-          (reference "#FLG02201") (unit 1)
+          (reference "#PWR02201") (unit 1)
         )
       )
     )

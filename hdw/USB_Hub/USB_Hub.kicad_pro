@@ -311,6 +311,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "./",
     "spice_current_sheet_as_root": false,
@@ -341,6 +349,18 @@
     [
       "00000000-0000-0000-0000-00005f41a7d6",
       "+5V Telemetry"
+    ],
+    [
+      "203423c4-94fc-4748-bda0-ab8f2e301358",
+      "+3.3V Power Supply"
+    ],
+    [
+      "b536b902-d925-4d87-a550-76997db32615",
+      "+3.3V Telemetry"
+    ],
+    [
+      "5b35e0c1-9928-450a-ba6b-f2a701eceaac",
+      "Power ORing"
     ],
     [
       "00000000-0000-0000-0000-00005f41a7e6",
@@ -395,28 +415,20 @@
       "Downstream Port 3"
     ],
     [
-      "5abdfc32-d505-438f-9f83-6eb1fbb5ef41",
-      "Port Power Control"
-    ],
-    [
-      "5b35e0c1-9928-450a-ba6b-f2a701eceaac",
-      "Power ORing"
-    ],
-    [
-      "203423c4-94fc-4748-bda0-ab8f2e301358",
-      "+3.3V Power Supply"
-    ],
-    [
       "00000000-0000-0000-0000-00005f41b463",
       "Upstream Port"
     ],
     [
-      "b536b902-d925-4d87-a550-76997db32615",
-      "+3.3V Telemetry"
+      "5abdfc32-d505-438f-9f83-6eb1fbb5ef41",
+      "Port Power Control"
     ],
     [
       "dbf8b5e7-1395-4db6-b7a5-94e88d4ceeae",
       "Port Telemetry"
+    ],
+    [
+      "04dbbf52-311c-4fc3-a63c-ea6d30612295",
+      "Mechanical"
     ]
   ],
   "text_variables": {}
