@@ -849,14 +849,11 @@
     (pin "2" (uuid 0a1ce18e-2efd-4c20-a49c-083bad87b3b2))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "R?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
           (reference "R?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "R1902") (unit 1)
+          (reference "R1102") (unit 1)
         )
       )
     )
@@ -887,7 +884,7 @@
           (reference "D?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "D1901") (unit 1)
+          (reference "D1101") (unit 1)
         )
       )
     )
@@ -924,14 +921,11 @@
     (pin "2" (uuid 27ed7726-ab31-44fe-b8b7-7ae8d76b45f7))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "C?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "C1901") (unit 1)
+          (reference "C1101") (unit 1)
         )
       )
     )
@@ -975,7 +969,7 @@
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "C1903") (unit 1)
+          (reference "C1103") (unit 1)
         )
       )
     )
@@ -1012,14 +1006,11 @@
     (pin "2" (uuid 434f1c95-e133-44b0-b8a9-67163428722e))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "C?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "C1902") (unit 1)
+          (reference "C1102") (unit 1)
         )
       )
     )
@@ -1050,7 +1041,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01904") (unit 1)
+          (reference "#PWR01104") (unit 1)
         )
       )
     )
@@ -1087,14 +1078,11 @@
     (pin "2" (uuid 51f58c4c-64dc-44bb-9a4d-f24d66a40593))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "R?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
           (reference "R?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "R1901") (unit 1)
+          (reference "R1101") (unit 1)
         )
       )
     )
@@ -1118,14 +1106,11 @@
     (pin "1" (uuid 3ff7f428-41fd-4b03-8db7-bf07c41854f3))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01902") (unit 1)
+          (reference "#PWR01102") (unit 1)
         )
       )
     )
@@ -1156,7 +1141,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01903") (unit 1)
+          (reference "#PWR01103") (unit 1)
         )
       )
     )
@@ -1184,7 +1169,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01906") (unit 1)
+          (reference "#PWR01106") (unit 1)
         )
       )
     )
@@ -1208,14 +1193,11 @@
     (pin "1" (uuid d2729875-8c1a-4fe7-b030-0b64e7003ed7))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01901") (unit 1)
+          (reference "#PWR01101") (unit 1)
         )
       )
     )
@@ -1246,7 +1228,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#PWR01905") (unit 1)
+          (reference "#PWR01105") (unit 1)
         )
       )
     )
@@ -1274,7 +1256,7 @@
           (reference "#FLG?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "#FLG01901") (unit 1)
+          (reference "#FLG01101") (unit 1)
         )
       )
     )
@@ -1306,7 +1288,7 @@
           (reference "J?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b41b"
-          (reference "J1901") (unit 1)
+          (reference "J1101") (unit 1)
         )
       )
     )

@@ -45,16 +45,11 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "45_degree_only": false,
+          "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -72,7 +67,7 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
@@ -88,7 +83,7 @@
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "npth_inside_courtyard": "ignore",
-        "padstack": "warning",
+        "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
@@ -110,10 +105,12 @@
         "zones_intersect": "error"
       },
       "rules": {
+        "allow_blind_buried_vias": false,
+        "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.01,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
@@ -123,9 +120,9 @@
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.5,
+        "min_track_width": 0.19999999999999998,
+        "min_via_annular_width": 0.049999999999999996,
+        "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -171,16 +168,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0
-      ],
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
-      "zones_allow_external_fillets": false
+      "track_widths": [],
+      "via_dimensions": [],
+      "zones_allow_external_fillets": false,
+      "zones_use_no_outline": true
     },
     "layer_presets": [],
     "viewports": []
@@ -470,16 +461,8 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 0,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
-    "plot_directory": "./",
+    "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -498,60 +481,28 @@
       "+12V Input"
     ],
     [
-      "00000000-0000-0000-0000-00005f41a7c0",
-      "+12V Telemetry"
-    ],
-    [
       "00000000-0000-0000-0000-00005f41a7c7",
       "+5V Power Supply"
-    ],
-    [
-      "00000000-0000-0000-0000-00005f41a7d6",
-      "+5V Telemetry"
     ],
     [
       "203423c4-94fc-4748-bda0-ab8f2e301358",
       "+3.3V Power Supply"
     ],
     [
-      "b536b902-d925-4d87-a550-76997db32615",
-      "+3.3V Telemetry"
-    ],
-    [
       "5b35e0c1-9928-450a-ba6b-f2a701eceaac",
       "Power ORing"
-    ],
-    [
-      "00000000-0000-0000-0000-00005f41a7e6",
-      "PIC18F Programming"
-    ],
-    [
-      "00000000-0000-0000-0000-00005f41a817",
-      "PIC18F Core"
-    ],
-    [
-      "00000000-0000-0000-0000-00005f41a830",
-      "USB UART Bridge"
     ],
     [
       "00000000-0000-0000-0000-00005f422473",
       "PGOOD LEDs"
     ],
     [
-      "00000000-0000-0000-0000-00005f422479",
-      "Status LEDs"
-    ],
-    [
       "00000000-0000-0000-0000-00005f42247f",
       "Hub LEDs"
     ],
     [
-      "00000000-0000-0000-0000-00005f423270",
-      "Display"
-    ],
-    [
-      "00000000-0000-0000-0000-00005f423276",
-      "Pushbuttons"
+      "04dbbf52-311c-4fc3-a63c-ea6d30612295",
+      "Mechanical"
     ],
     [
       "00000000-0000-0000-0000-00005f41a859",
@@ -580,14 +531,6 @@
     [
       "5abdfc32-d505-438f-9f83-6eb1fbb5ef41",
       "Port Power Control"
-    ],
-    [
-      "dbf8b5e7-1395-4db6-b7a5-94e88d4ceeae",
-      "Port Telemetry"
-    ],
-    [
-      "04dbbf52-311c-4fc3-a63c-ea6d30612295",
-      "Mechanical"
     ]
   ],
   "text_variables": {}

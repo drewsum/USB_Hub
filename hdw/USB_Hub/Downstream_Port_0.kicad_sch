@@ -821,7 +821,7 @@
   (symbol (lib_id "Connector:USB_A") (at 205.74 81.28 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f42b5f2)
-    (property "Reference" "J1801" (at 210.82 69.85 0)
+    (property "Reference" "J1001" (at 210.82 69.85 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "USB_A" (at 210.82 72.39 0)
@@ -841,7 +841,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "J1801") (unit 1)
+          (reference "J1001") (unit 1)
         )
       )
     )
@@ -878,11 +878,8 @@
     (pin "2" (uuid 94bbdcd4-0618-432a-b592-9bd99028f99a))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "C?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "C1802") (unit 1)
+          (reference "C1002") (unit 1)
         )
       )
     )
@@ -919,11 +916,8 @@
     (pin "2" (uuid 17431b73-d65d-4231-adbc-29f7b3cb86aa))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "R?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "R1802") (unit 1)
+          (reference "R1002") (unit 1)
         )
       )
     )
@@ -947,11 +941,8 @@
     (pin "1" (uuid 08d5ccbd-c20e-4ca5-8002-315a8b724890))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01801") (unit 1)
+          (reference "#PWR01001") (unit 1)
         )
       )
     )
@@ -992,7 +983,7 @@
           (reference "C?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "C1803") (unit 1)
+          (reference "C1003") (unit 1)
         )
       )
     )
@@ -1001,7 +992,7 @@
   (symbol (lib_id "Power_Protection:SP0503BAHT") (at 157.48 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 44d501e8-9123-4723-87ce-2eb310d18265)
-    (property "Reference" "D1801" (at 163.195 88.9 0)
+    (property "Reference" "D1001" (at 163.195 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SP0503BAHT" (at 163.195 90.805 0)
@@ -1020,7 +1011,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "D1801") (unit 1)
+          (reference "D1001") (unit 1)
         )
       )
     )
@@ -1029,7 +1020,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 185.42 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d35729b-7a06-44c9-9bea-998647bf98fe)
-    (property "Reference" "#FLG01801" (at 185.42 73.025 0)
+    (property "Reference" "#FLG01001" (at 185.42 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 185.42 71.12 0)
@@ -1045,7 +1036,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#FLG01801") (unit 1)
+          (reference "#FLG01001") (unit 1)
         )
       )
     )
@@ -1073,7 +1064,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01803") (unit 1)
+          (reference "#PWR01003") (unit 1)
         )
       )
     )
@@ -1101,7 +1092,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01804") (unit 1)
+          (reference "#PWR01004") (unit 1)
         )
       )
     )
@@ -1110,7 +1101,7 @@
   (symbol (lib_id "Custom Library:CHASSIS") (at 210.82 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8db46640-8dc5-4df1-8e2f-c45ed1609171)
-    (property "Reference" "#PWR01806" (at 210.82 101.6 0)
+    (property "Reference" "#PWR01006" (at 210.82 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "CHASSIS" (at 210.82 100.33 0)
@@ -1126,7 +1117,7 @@
     (instances
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01806") (unit 1)
+          (reference "#PWR01006") (unit 1)
         )
       )
     )
@@ -1154,7 +1145,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01805") (unit 1)
+          (reference "#PWR01005") (unit 1)
         )
       )
     )
@@ -1178,11 +1169,8 @@
     (pin "1" (uuid ee8996d6-7e53-440d-bc31-79a61d560b2c))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "#PWR01802") (unit 1)
+          (reference "#PWR01002") (unit 1)
         )
       )
     )
@@ -1219,11 +1207,8 @@
     (pin "2" (uuid f81a2731-8d31-42ab-8024-fe221c00c8cf))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "C?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "C1801") (unit 1)
+          (reference "C1001") (unit 1)
         )
       )
     )
@@ -1260,11 +1245,8 @@
     (pin "2" (uuid 59b8551e-bf94-4d0e-bea6-772c209ca844))
     (instances
       (project "USB_Hub"
-        (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41a830"
-          (reference "R?") (unit 1)
-        )
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/00000000-0000-0000-0000-00005f41b415"
-          (reference "R1801") (unit 1)
+          (reference "R1001") (unit 1)
         )
       )
     )

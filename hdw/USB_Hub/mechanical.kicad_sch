@@ -330,7 +330,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "H2504") (unit 1)
+          (reference "H804") (unit 1)
         )
       )
     )
@@ -359,7 +359,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "H2502") (unit 1)
+          (reference "H802") (unit 1)
         )
       )
     )
@@ -391,7 +391,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "MK2502") (unit 1)
+          (reference "MK802") (unit 1)
         )
       )
     )
@@ -423,7 +423,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "MK2501") (unit 1)
+          (reference "MK801") (unit 1)
         )
       )
     )
@@ -452,7 +452,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "H2501") (unit 1)
+          (reference "H801") (unit 1)
         )
       )
     )
@@ -484,7 +484,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "MK2503") (unit 1)
+          (reference "MK803") (unit 1)
         )
       )
     )
@@ -516,7 +516,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "MK2505") (unit 1)
+          (reference "MK805") (unit 1)
         )
       )
     )
@@ -548,7 +548,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "MK2504") (unit 1)
+          (reference "MK804") (unit 1)
         )
       )
     )
@@ -580,7 +580,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "MK2508") (unit 1)
+          (reference "MK808") (unit 1)
         )
       )
     )
@@ -609,7 +609,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "H2503") (unit 1)
+          (reference "H803") (unit 1)
         )
       )
     )
@@ -641,7 +641,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "MK2506") (unit 1)
+          (reference "MK806") (unit 1)
         )
       )
     )
@@ -673,7 +673,7 @@
       )
       (project "USB_Hub"
         (path "/e85aac8c-404c-45dd-bda3-1057cae83baf/04dbbf52-311c-4fc3-a63c-ea6d30612295"
-          (reference "MK2507") (unit 1)
+          (reference "MK807") (unit 1)
         )
       )
     )
