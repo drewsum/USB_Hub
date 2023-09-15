@@ -502,11 +502,11 @@
     (uuid f712cb3a-0496-4cc6-ac00-7ab18df784c8)
   )
 
-  (global_label "PO3P3_PGOOD" (shape output) (at 71.12 82.55 180)
+  (global_label "POS3P3_PGOOD" (shape output) (at 71.12 82.55 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 3841f8e1-0b68-4e1a-afd4-c0c9c633d2aa)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 71.12 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 53.9308 82.55 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
   )
 

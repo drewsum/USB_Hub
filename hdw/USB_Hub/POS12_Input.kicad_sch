@@ -1260,11 +1260,11 @@
     (uuid fbf8b02e-06ff-49e5-a772-541c3e70f1bf)
   )
 
-  (global_label "POS12_PGOOD" (shape output) (at 175.26 99.06 0)
+  (global_label "POS12_PGOOD" (shape output) (at 175.26 99.06 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 308ce087-d32b-4c5c-9f05-bac1b9c8981b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 175.26 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 191.1792 99.06 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
   )
 
